@@ -1,0 +1,26 @@
+<html> 
+<style>
+body { font-size:16px;}
+table, td, th { border:1px solid black;border-collapse:collapse; } 
+
+</style>
+<title> Cobalt Enterprises TechTasks</title> 
+<a href="http://192.168.2.2/perl/techtask/techtasks.pl"> View Current Tasks </a>
+<form method="post" action='perl/techtask/insert.pl'>  
+<legend> Tech Ticket Form </legend> 
+<table border:1px solid black><tr><td width="80"> Assign: </td><td> <input type='text' name='user' required></td>
+<tr>
+<tr><td width="80"> Task: </td><td> <input type='text' name='task' required></td>
+<tr>
+<tr><td width="80"> Status: </td><td> <select name='status'> <option value="closed"> Closed </option> 
+<option value="open"> Open </option> </select> </td>
+<tr>
+<tr><td width="80"> Comments: </td><td><textarea name='comments' row="70" cols="50"> </textarea>  </td>
+<tr>
+</table>
+<input type="submit" value="Submit"> 
+
+<p> events on this webpage are logged and monitored </p> 
+</form>
+
+
